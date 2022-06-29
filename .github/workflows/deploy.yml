@@ -41,7 +41,7 @@ jobs:
       - name: CurrentPath
         run: pwd
       - name: Upload Artifact to s3
-        run: aws s3 cp ${GITHUB_WORKSPACE/target/*.war}} s3://${{ env.S3BUCKET }}
+        run: aws s3 cp ${{GITHUB_WORKSPACE/target/*.war}} s3://${{ env.S3BUCKET }}
 
   deploy:
     needs: build
