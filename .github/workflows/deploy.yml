@@ -36,7 +36,6 @@ jobs:
 
       - name: Build and Package Maven
         id: package
-        echo: $GITHUB_WORKSPACE
         ##working-directory: ${{ env.applicationfolder }}
         run: $GITHUB_WORKSPACE/.github/scripts/build.sh
 
