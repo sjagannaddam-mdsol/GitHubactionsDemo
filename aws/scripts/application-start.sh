@@ -2,4 +2,4 @@
 set -xe
 
 # Start Tomcat, the application server.
-service tomcat start
+sudo /usr/local/tomcat9/bin/startup.sh
