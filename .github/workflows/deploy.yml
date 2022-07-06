@@ -73,7 +73,7 @@ jobs:
       - name: Deploy Amazon ECS task definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         env:
-            ECS_SERVICE: GitHubDeploymentSample
+            ECS_SERVICE: GitHubactionsDemo
             ECS_CLUSTER: cluster-001
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
