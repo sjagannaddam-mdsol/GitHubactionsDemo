@@ -64,9 +64,8 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         env:
           ECS_TASK_DEFINITION: TaskDefination.json
-          CONTAINER_NAME: ECS Instance - EC2ContainerService-cluster-001
-          ECR_REPOSITORY: githubpocrepo
-        with:
+          CONTAINER_NAME: GitHibSpringBootAppContainer
+          with:
           task-definition: ${{ env.ECS_TASK_DEFINITION }}
           container-name: ${{ env.CONTAINER_NAME }}
           image: ${{ steps.build-image.outputs.image }}
