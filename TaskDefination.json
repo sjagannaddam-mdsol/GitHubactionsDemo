@@ -19,7 +19,7 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "/ecs/dcdojo",
-          "awslogs-region": "us-east-2",
+          "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
       }
@@ -28,7 +28,7 @@
   "requiresCompatibilities": [
     "FARGATE"
   ],
-  "networkMode": "direct",
+  "networkMode": "bridge",
   "cpu": "1024",
   "memory": "2048"
 }
